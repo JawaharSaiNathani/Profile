@@ -9,7 +9,7 @@
     <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
     <meta content="Shreethemes" name="author" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="{{ url_for('static',filename='images/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}">
     <!-- Bootstrap -->
     <link href="{{ url_for('static',filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- Magnific -->
@@ -111,7 +111,7 @@
                         <h6 id="display-tags" class="sub-title text-light title-dark">I love <span class="element text-primary" data-elements="{{display_tags}}"></span></h6>
                         <div class="mt-4 pt-2">
                             <a href="#contact" class="btn btn-primary rounded mb-2 mr-2">Hire me</a>
-                            <a href="resume.pdf" class="btn btn-outline-primary rounded mb-2" download="JawaharNathani">Download CV <i data-feather="download" class="fea icon-sm"></i></a>
+                            <a href="{{ url_for('static',filename='resume.pdf') }}" class="btn btn-outline-primary rounded mb-2" download="JawaharNathani">Download CV <i data-feather="download" class="fea icon-sm"></i></a>
                         </div>
                     </div>
                 </div>
@@ -139,8 +139,8 @@
                         <span id="display-message"></span>
                         <img src="{{ url_for('static',filename='images/sign.jpg') }}" height="40" alt="">
                         <div class="mt-4">
-                            <a href="#projects" class="btn btn-primary mouse-down">View Portfolio</a>
                             <a href="/certificates" class="btn btn-primary mouse-down">View Certificates</a>
+                            <a href="#projects" class="btn btn-primary mouse-down">View Portfolio</a>
                         </div>
                     </div>
                 </div>
