@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Nathani Jawahar Sai</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
+    <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
+    <meta content="Shreethemes" name="author" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static',filename='images/favicon.ico') }}">
+    <!-- Bootstrap -->
+    <link href="{{ url_for('static',filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Magnific -->
+    <link href="{{ url_for('static',filename='css/magnific-popup.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Icon -->
+    <link href="{{ url_for('static',filename='css/materialdesignicons.min.css') }}" rel="stylesheet" type="text/css" />
+
+    <!-- SLICK SLIDER -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.theme.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.transitions.css') }}" />
+    <!-- Animation -->
+    <link href="{{ url_for('static',filename='css/aos.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Custom Css -->
+    <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="{{ url_for('static',filename='css/colors/default.css') }}" rel="stylesheet" id="color-opt">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="logo">
+                <img src="{{ url_for('static',filename='images/logo.jpg') }}" height="20" class="d-block mx-auto" alt="">
+                <!-- <h5 class="d-block mx-auto">JawaharNathani</h5> -->
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="padding-top: 12px;">
+                <h5 class="l-dark" style="color: #555555;">Jawahar Sai</h5>
+                <h5 class="l-light" style="color: white;">Jawahar Sai</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			        <span data-feather="menu" class="fea icon-md"></span>
+			    </button>
+            <!--end button-->
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Experiences">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Education">Education</a>
+                    </li>
+                    <!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Skills">Skills</a>
+                    </li>
+                    <!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Areas-of-Interest">Areas of Interest</a>
+                    </li>
+                    <!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="list-unstyled mb-0 mt-2 mt-sm-0 social-icon light-social-icon">
+                    <li class="list-inline-item"><a href="https://github.com/JawaharSaiNathani"><i class="mdi mdi-github-box"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/jawahar-sai-nathani-2a35391a5/"><i class="mdi mdi-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/JawaharNathani"><i class="mdi mdi-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--end container-->
+    </nav>
+    <!--end navbar-->
+    <!-- Navbar End -->
+
+    <!-- HOME START-->
+    <section class="bg-home" id="home">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row mt-5 mt-sm-0 justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <div class="title-heading" data-aos="fade-up">
+                        <img src="{{ url_for('static',filename='images/hero.png') }}" class="img-fluid rounded-circle" alt="">
+                        <h1 class="heading text-primary mt-3">Nathani Jawahar Sai</h1>
+                        <h6 id="display-tags" class="sub-title text-light title-dark">I love <span class="element text-primary" data-elements="{{display_tags}}"></span></h6>
+                        <div class="mt-4 pt-2">
+                            <a href="#contact" class="btn btn-primary rounded mb-2 mr-2">Hire me</a>
+                            <a href="resume.pdf" class="btn btn-outline-primary rounded mb-2" download="JawaharNathani">Download CV <i data-feather="download" class="fea icon-sm"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+        <a href="#about" data-scroll-nav="1" class="mouse-icon mouse-icon-white rounded-pill bg-transparent mouse-down">
+            <span class="wheel position-relative d-block mover"></span>
+        </a>
+    </section>
+    <!--end section-->
+    <!-- HOME END-->
+
+    <!-- About Start -->
+    <section class="section pb-3" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                    <div class="section-title mb-0 ml-lg-5 ml-md-3" data-aos="fade-up">
+                        <h4 class="title text-primary mb-3">Jawahar Sai</h4>
+                        <h6 class="designation mb-3">Btech | CSE | <span class="text-primary">IIT Tirupati</span></h6>
+                        <span id="display-message"></span>
+                        <img src="{{ url_for('static',filename='images/sign.jpg') }}" height="40" alt="">
+                        <div class="mt-4">
+                            <a href="#projects" class="btn btn-primary mouse-down">View Portfolio</a>
+                            <a href="/certificates" class="btn btn-primary mouse-down">View Certificates</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+
+
+        <!--end container-->
+
+        <div class="container-fluid mt-100 mt-60">
+            <div class="rounded py-md-5 py-4" style="background: url(/static/images/bg-counter.jpg) center center;">
+                <div class="container">
+                    <div class="row" id="counter">
+                        <div class="col-lg-3 col-6">
+                            <div class="counter-box rounded py-3 text-center" data-aos="fade-up">
+                                <div class="counter-icon">
+                                    <i data-feather="award" class="fea icon-md text-primary"></i>
+                                </div>
+                                <h3 class="counter-value mt-3 text-white title-dark" data-count="3575">95</h3>
+                                <h6 class="counter-head font-weight-normal mb-0 text-white title-dark">JEE Advanced Rank</h6>
+                            </div>
+                            <!--end counter box-->
+                        </div>
+                        <!--end col-->
+
+                        <div class="col-lg-3 col-6">
+                            <div class="counter-box rounded py-3 text-center" data-aos="fade-up">
+                                <div class="counter-icon">
+                                    <i data-feather="award" class="fea icon-md text-primary"></i>
+                                </div>
+                                <h3 class="counter-value mt-3 text-white title-dark" data-count="3595">95</h3>
+                                <h6 class="counter-head font-weight-normal mb-0 text-white title-dark">JEE Mains Rank</h6>
+                            </div>
+                            <!--end counter box-->
+                        </div>
+                        <!--end col-->
+
+                        <div class="col-lg-3 col-6">
+                            <div class="counter-box rounded py-3 text-center" data-aos="fade-up">
+                                <div class="counter-icon">
+                                    <i data-feather="box" class="fea icon-md text-primary"></i>
+                                </div>
+                                <h3 class="counter-value mt-3 text-white title-dark" data-count="20">1</h3>
+                                <h6 class="counter-head font-weight-normal mb-0 text-white title-dark">Projects Done</h6>
+                            </div>
+                            <!--end counter box-->
+                        </div>
+                        <!--end col-->
+
+                        <div class="col-lg-3 col-6">
+                            <div class="counter-box rounded py-3 text-center" data-aos="fade-up">
+                                <div class="counter-icon">
+                                    <i data-feather="activity" class="fea icon-md text-primary"></i>
+                                </div>
+                                <h3 class="counter-value mt-3 text-white title-dark" data-count="36">3</h3>
+                                <h6 class="counter-head font-weight-normal mb-0 text-white title-dark">Skills</h6>
+                            </div>
+                            <!--end counter box-->
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end container-->
+            </div>
+            <!--end div-->
+        </div>
+        <!--end container fluid-->
+    </section>
+    <!-- About end -->
+
+    <section class="section" id="Experiences">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title" data-aos="fade-up">
+                        <div class="titles">
+                            <h4 class="title title-line text-uppercase mb-4 pb-4">Experiences</h4>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-icon rounded-pill text-center mt-4 pt-2">
+                        <i data-feather="star" class="fea icon-md-sm"></i>
+                    </div>
+                    <div class="timeline-page pt-2 position-relative" id="experiences-container" data-aos="fade-up"></div>
+                    <!--end timeline page-->
+                    <!-- TIMELINE END -->
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+
+    <!-- Resume Start -->
+    <section class="section" style="background-color: #3c4363;" id="Education">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title" data-aos="fade-up">
+                        <div class="titles">
+                            <h4 class="title title-line text-uppercase mb-4 pb-4" style="color: white;">EDUCATION</h4>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-icon rounded-pill text-center mt-4 pt-2" style="background-color: white;">
+                        <i data-feather="star" class="fea icon-md-sm"></i>
+                    </div>
+                    <div class="timeline-page pt-2 position-relative" data-aos="fade-up" id="education-container"></div>
+                    <!--end timeline page-->
+                    <!-- TIMELINE END -->
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- Skill End -->
+
+    <!-- Skill & CTA START -->
+    <section class="cta-full border-top" id="Skills">
+        <div class="container-fluid">
+            <div class="row position-relative">
+                <div class="col-lg-4 padding-less img">
+                    <div style="display: flex; justify-content: center; align-content: center; padding-top: 16%;"><img style="width: 100%;" src="{{ url_for('static',filename='images/skills.gif') }}" /></div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-8 offset-lg-4">
+                    <div class="cta-full-img-box">
+                        <div class="row justify-content-center">
+                            <div class="col-12 text-center">
+                                <div class="section-title" data-aos="fade-up">
+                                    <div class="titles">
+                                        <h4 class="title title-line text-uppercase mb-4 pb-4">Technical Proficiencies</h4>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end col-->
+                        </div>
+                        <!--end row-->
+
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <ul class="nav nav-pills flex-column px-0" id="pills-tab" data-aos="fade-up" role="tablist">
+                                    <li class="nav-item mt-4 pt-2">
+                                        <a class="nav-link rounded active" id="pills-cloud-tab" data-toggle="pill" href="#programming-Languages" role="tab" aria-controls="pills-cloud" aria-selected="false">
+                                            <div class="skill-container text-center pt-1 pb-1">
+                                                <h6 class="title mb-0">Programming Languages</h6>
+                                            </div>
+                                        </a>
+                                        <!--end nav link-->
+                                    </li>
+                                    <!--end nav item-->
+
+                                    <li class="nav-item mt-4 pt-2">
+                                        <a class="nav-link rounded" id="pills-smart-tab" data-toggle="pill" href="#Operating-Systems" role="tab" aria-controls="pills-smart" aria-selected="false">
+                                            <div class="skill-container text-center pt-1 pb-1">
+                                                <h6 class="title mb-0">Operating Systems</h6>
+                                            </div>
+                                        </a>
+                                        <!--end nav link-->
+                                    </li>
+                                    <!--end nav item-->
+
+                                    <li class="nav-item mt-4 pt-2">
+                                        <a class="nav-link rounded" id="pills-apps-tab" data-toggle="pill" href="#Software-Tools" role="tab" aria-controls="pills-apps" aria-selected="false">
+                                            <div class="skill-container text-center pt-1 pb-1">
+                                                <h6 class="title mb-0">Software Tools</h6>
+                                            </div>
+                                        </a>
+                                        <!--end nav link-->
+                                    </li>
+                                    <!--end nav item-->
+
+                                    <li class="nav-item mt-4 pt-2">
+                                        <a class="nav-link rounded" id="pills-apps-tab" data-toggle="pill" href="#Software-Proficiencies" role="tab" aria-controls="pills-apps" aria-selected="false">
+                                            <div class="skill-container text-center pt-1 pb-1">
+                                                <h6 class="title mb-0">Software Proficiencies</h6>
+                                            </div>
+                                        </a>
+                                        <!--end nav link-->
+                                    </li>
+                                    <!--end nav item-->
+                                </ul>
+                                <!--end nav pills-->
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-lg-9 col-md-8 col-12">
+                                <div class="tab-content pl-lg-4" id="pills-tabContent" data-aos="fade-up">
+                                    <div class="tab-pane fade show active" id="programming-Languages" role="tabpanel" aria-labelledby="pogramming-Languages-tab">
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">Python</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar position-relative bg-primary" style="width:90%;">
+                                                    <div class="progress-value d-block text-dark h6">90%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end process box-->
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">C | C++</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar position-relative bg-primary" style="width:80%;">
+                                                    <div class="progress-value d-block text-dark h6">80%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end process box-->
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">Java</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar position-relative bg-primary" style="width:80%;">
+                                                    <div class="progress-value d-block text-dark h6">80%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end process box-->
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">HTML | CSS | Javascript | Sql</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar position-relative bg-primary" style="width:75%;">
+                                                    <div class="progress-value d-block text-dark h6">75%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end process box-->
+                                        <div class="progress-box mt-4 pt-2">
+                                            <h6 class="font-weight-normal">C Sharp</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar position-relative bg-primary" style="width:80%;">
+                                                    <div class="progress-value d-block text-dark h6">80%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end process box-->
+                                    </div>
+                                    <!--end teb pane-->
+
+                                    <div class="tab-pane fade" id="Operating-Systems" role="tabpanel" aria-labelledby="Operating-Systems-tab">
+                                        <div class="container mt-100 mt-60">
+                                            <!--end row-->
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-6 mt-4 pt-2">
+                                                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                                                        <div class="hobbies d-flex align-items-center">
+                                                            <div class="text-center rounded-pill mr-4">
+                                                                <i data-feather="monitor" class="icon fea icon-md-sm"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                <h6 class="title mb-0">Mac OS</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+
+                                                <div class="col-lg-6 col-md-6 col-6 mt-4 pt-2">
+                                                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                                                        <div class="hobbies d-flex align-items-center">
+                                                            <div class="text-center rounded-pill mr-4">
+                                                                <i data-feather="monitor" class="icon fea icon-md-sm"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                <h6 class="title mb-0">Windows</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-lg-6 col-md-6 col-6 mt-4 pt-2">
+                                                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                                                        <div class="hobbies d-flex align-items-center">
+                                                            <div class="text-center rounded-pill mr-4">
+                                                                <i data-feather="monitor" class="icon fea icon-md-sm"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                <h6 class="title mb-0">Ubuntu</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-6 mt-4 pt-2">
+                                                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                                                        <div class="hobbies d-flex align-items-center">
+                                                            <div class="text-center rounded-pill mr-4">
+                                                                <i data-feather="monitor" class="icon fea icon-md-sm"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                <h6 class="title mb-0">Linux</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end container-->
+                                        <!--end process box-->
+                                    </div>
+                                    <!--end teb pane-->
+
+                                    <div class="tab-pane fade" id="Software-Tools" role="tabpanel" aria-labelledby="Software-Tools-tab">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-6 mt-4 pt-2">
+                                                <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                                                    <div class="hobbies d-flex align-items-center">
+                                                        <div class="text-center rounded-pill mr-4">
+                                                            <i data-feather="cpu" class="icon fea icon-md-sm"></i>
+                                                        </div>
+                                                        <div class="content">
+                                                            <h6 class="title mb-0">Tensorflow</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+
+                                            <div class="col-lg-6 col-md-6 col-6 mt-4 pt-2">
+                                                <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                                                    <div class="hobbies d-flex align-items-center">
+                                                        <div class="text-center rounded-pill mr-4">
+                                                            <i data-feather="box" class="icon fea icon-md-sm"></i>
+                                                        </div>
+                                                        <div class="content">
+                                                            <h6 class="title mb-0">Keras</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-lg-6 col-md-6 col-6 mt-4 pt-2">
+                                                <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                                                    <div class="hobbies d-flex align-items-center">
+                                                        <div class="text-center rounded-pill mr-4">
+                                                            <i data-feather="codesandbox" class="icon fea icon-md-sm"></i>
+                                                        </div>
+                                                        <div class="content">
+                                                            <h6 class="title mb-0">PyTorch</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-6 mt-4 pt-2">
+                                                <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                                                    <div class="hobbies d-flex align-items-center">
+                                                        <div class="text-center rounded-pill mr-4">
+                                                            <i data-feather="monitor" class="icon fea icon-md-sm"></i>
+                                                        </div>
+                                                        <div class="content">
+                                                            <h6 class="title mb-0">ReactJS</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-6 mt-4 pt-2">
+                                                <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                                                    <div class="hobbies d-flex align-items-center">
+                                                        <div class="text-center rounded-pill mr-4">
+                                                            <i data-feather="server" class="icon fea icon-md-sm"></i>
+                                                        </div>
+                                                        <div class="content">
+                                                            <h6 class="title mb-0">Flask</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-6 mt-4 pt-2">
+                                                <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                                                    <div class="hobbies d-flex align-items-center">
+                                                        <div class="text-center rounded-pill mr-4">
+                                                            <i data-feather="activity" class="icon fea icon-md-sm"></i>
+                                                        </div>
+                                                        <div class="content">
+                                                            <h6 class="title mb-0">SkLearn</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-6 mt-4 pt-2">
+                                                <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                                                    <div class="hobbies d-flex align-items-center">
+                                                        <div class="text-center rounded-pill mr-4">
+                                                            <i data-feather="database" class="icon fea icon-md-sm"></i>
+                                                        </div>
+                                                        <div class="content">
+                                                            <h6 class="title mb-0">SQL</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end teb pane-->
+                                    <div class="tab-pane fade" id="Software-Proficiencies" role="tabpanel" aria-labelledby="Software-Proficiencies-tab">
+                                        <div class="container mt-100 mt-60">
+                                            <!--end row-->
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-6 mt-4 pt-2">
+                                                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                                                        <div class="hobbies d-flex align-items-center">
+                                                            <div class="text-center rounded-pill mr-4">
+                                                                <i data-feather="book" class="icon fea icon-md-sm"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                <h6 class="title mb-0">Jupyter</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+
+                                                <div class="col-lg-6 col-md-6 col-6 mt-4 pt-2">
+                                                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                                                        <div class="hobbies d-flex align-items-center">
+                                                            <div class="text-center rounded-pill mr-4">
+                                                                <i data-feather="layout" class="icon fea icon-md-sm"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                <h6 class="title mb-0">Xcode</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-lg-6 col-md-6 col-6 mt-4 pt-2">
+                                                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                                                        <div class="hobbies d-flex align-items-center">
+                                                            <div class="text-center rounded-pill mr-4">
+                                                                <i data-feather="credit-card" class="icon fea icon-md-sm"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                <h6 class="title mb-0">Virtual Studio</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-6 mt-4 pt-2">
+                                                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                                                        <div class="hobbies d-flex align-items-center">
+                                                            <div class="text-center rounded-pill mr-4">
+                                                                <i data-feather="watch" class="icon fea icon-md-sm"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                <h6 class="title mb-0">Unity</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end container-->
+                                        <!--end process box-->
+                                    </div>
+                                </div>
+                                <!--end tab content-->
+                            </div>
+                            <!--end col-->
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end about detail -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container fluid-->
+    </section>
+    <!--end section-->
+    <!-- Skill & CTA End -->
+    <div style="min-height: 500px;background-color: #3c4363;" id="Areas-of-Interest">
+        <div style="height: 1px;"></div>
+        <div class="container mt-100 mt-60">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title" data-aos="fade-up">
+                        <div class="titles">
+                            <h4 class="title title-line text-uppercase mb-4 pb-4" style="color: white;">Areas of Interests</h4>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="stop-circle" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">Data Structures</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="stop-circle" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">Algorithms</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="book" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">ML</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="smartphone" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">AI</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="activity" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">Block Chain</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="box" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">Development</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="pen-tool" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">Designing</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
+                    <div class="interests-desc bg-light position-relative px-2 py-3 rounded" data-aos="fade-up">
+                        <div class="hobbies d-flex align-items-center">
+                            <div class="text-center rounded-pill mr-4">
+                                <i data-feather="target" class="icon fea icon-md-sm"></i>
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-0">Sports</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects End -->
+    <section class="section bg-light" id="projects">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title" data-aos="fade-up">
+                        <div class="titles">
+                            <h4 class="title title-line text-uppercase mb-4 pb-4">My Portfolio</h4>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="portfolio-container">
+            <div class="row mt-4 pt-2">
+                <div class="col-lg-12">
+                    <ul class="portfolioFilter text-center mb-0 list-unstyled" data-aos="fade-up">
+                        <li class="list-inline-item mb-3"><a style="cursor: pointer;" data-filter="*" class="active text-dark mr-2 py-2 px-3 rounded">All</a></li>
+                        <li class="list-inline-item mb-3"><a style="cursor: pointer;" data-filter=".machine-learning" class="text-dark mr-2 py-2 px-3 rounded">Machine Learning</a></li>
+                        <li class="list-inline-item mb-3"><a style="cursor: pointer;" data-filter=".reactjs" class="text-dark mr-2 py-2 px-3 rounded">ReactJS</a></li>
+                        <li class="list-inline-item mb-3"><a style="cursor: pointer;" data-filter=".python" class="text-dark mr-2 py-2 px-3 rounded">Python</a></li>
+                        <li class="list-inline-item mb-3"><a style="cursor: pointer;" data-filter=".unity" class="text-dark mr-2 py-2 px-3 rounded">Unity</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="portfolioContainer row"></div>
+    </section>
+
+    <!-- Contact Start -->
+    <section class="section pb-0" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title" data-aos="fade-up">
+                        <div class="titles">
+                            <h4 class="title title-line text-uppercase mb-4 pb-4">Contact Me</h4>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+
+            <div class="row">
+                <div class="col-md-4 mt-4 pt-2">
+                    <div class="contact-detail text-center" data-aos="fade-up">
+                        <div class="icon">
+                            <i data-feather="phone" class="fea icon-md"></i>
+                        </div>
+                        <div class="content mt-4">
+                            <h5 class="title text-uppercase">Phone</h5>
+                            <a href="tel:+916303207805" class="text-primary">+91 6303207805</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-md-4 mt-4 pt-2">
+                    <div class="contact-detail text-center">
+                        <div class="icon">
+                            <i data-feather="mail" class="fea icon-md"></i>
+                        </div>
+                        <div class="content mt-4">
+                            <h5 class="title text-uppercase">Email</h5>
+                            <a href="mailto:cs18b023@iittp.ac.in" class="text-primary">jawaharsainathani@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-md-4 mt-4 pt-2">
+                    <div class="contact-detail text-center">
+                        <div class="icon">
+                            <i data-feather="map-pin" class="fea icon-md"></i>
+                        </div>
+                        <div class="content mt-4">
+                            <h5 class="title text-uppercase">Location</h5>
+                            <p class="text-muted">12-142/3, Bajaji Nagar, Toopran Road, Gajwel<br>Telangana India 502278</p>
+                            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.812851917877!2d78.67685431522429!3d17.847405987804436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc7403e3f275a3%3A0x2ce6965960ce48af!2sSri%20Sai%20Fertilaizers!5e0!3m2!1sen!2sin!4v1614795600463!5m2!1sen!2sin"
+                                class="video-play-icon text-primary">View on Google map</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+
+    <section class="section pt-5 mt-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="custom-form mb-sm-30" data-aos="fade-up">
+                        <div id="message"></div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-6">
+                                        <div class="form-group">
+                                            <input name="name" id="name" type="text" class="form-control border rounded" placeholder="First Name :" onkeydown="inputChanged('form_name_val')">
+                                            <p id="form_name_val" style="color: red; font-size: 10px; padding-left: 10px;"></p>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                    <div class="col-lg-12 col-md-6">
+                                        <div class="form-group">
+                                            <input name="email" id="email" type="email" class="form-control border rounded" placeholder="Your email :" onkeydown="inputChanged('form_email_val')">
+                                            <p id="form_email_val" style="color: red; font-size: 10px; padding-left: 10px;"></p>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input name="subject" id="subject" class="form-control border rounded" placeholder="Your subject :" onkeydown="inputChanged('form_subject_val')">
+                                            <p id="form_subject_val" style="color: red; font-size: 10px; padding-left: 10px;"></p>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                </div>
+                                <!--end row-->
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <textarea name="comments" id="comments" rows="4" class="form-control border rounded" placeholder="Your Message :" onkeydown="inputChanged('form_comment_val')"></textarea>
+                                    <p id="form_comment_val" style="color: red; font-size: 10px; padding-left: 10px;"></p>
+                                </div>
+                            </div>
+                            <!--end col-->
+                        </div>
+                        <!--end row-->
+                        <div class="row">
+                            <div class="col-sm-12 text-right">
+                                <button id="submit" class="submitBnt btn btn-primary" style="cursor: pointer;" onclick="sendmessage_toAdmin()">Send Message</button>
+                            </div>
+                            <!--end col-->
+                        </div>
+                        <!--end row-->
+                        <!--end form-->
+                    </div>
+                    <!--end custom-form-->
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center" data-aos="fade-down">
+                    <h3><a href="#" style="color: white;">JAWAHAR</a></h3>
+                    <p class="para-desc mx-auto mt-5 ">{{_footer_msg}}</p>
+                    <ul class="list-unstyled mb-0 mt-4 social-icon ">
+                        <li class="list-inline-item"><a href="https://github.com/JawaharSaiNathani"><i class="mdi mdi-github-box"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/jawahar-sai-nathani-2a35391a5/"><i class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/JawaharNathani"><i class="mdi mdi-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <footer class="footer footer-bar bg-dark ">
+        <div class="container text-foot text-center ">
+            <p class="mb-0 ">{{_copyright_msg}}</p>
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <!-- Footer End -->
+    <div class="cursor"></div>
+
+    <!-- Back to top -->
+    <a href="# " class="back-to-top rounded text-center " id="back-to-top ">
+        <i class="mdi mdi-chevron-up d-block "> </i>
+    </a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootstrap.bundle.min.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/jquery.easing.min.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/scrollspy.min.js') }} "></script>
+    <!-- SLIDER -->
+    <script src="{{ url_for('static',filename='js/owl.carousel.min.js') }} "></script>
+    <!-- Magnific Popup -->
+    <script src="{{ url_for('static',filename='js/jquery.magnific-popup.min.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/isotope.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/portfolio-filter.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/magnific.init.js') }} "></script>
+    <!-- Contact -->
+    <script src="{{ url_for('static',filename='js/contact.js') }} "></script>
+    <!-- Counter -->
+    <script src="{{ url_for('static',filename='js/counter.init.js') }} "></script>
+    <!-- Tweenmax Js -->
+    <script src="{{ url_for('static',filename='js/jquery-twennmax.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/TweenMax.min.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/jquery-twennmax.init.js') }} "></script>
+    <!-- Feather icon -->
+    <script src="{{ url_for('static',filename='js/feather.min.js') }} "></script>
+    <!-- Typed -->
+    <script src="{{ url_for('static',filename='js/typed.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/typed.init.js') }} "></script>
+    <!-- Animation -->
+    <script src="{{ url_for('static',filename='js/aos.js') }} "></script>
+    <!-- Main Js -->
+    <script src="{{ url_for('static',filename='js/app.js') }} "></script>
+
+    <script src="{{ url_for('static',filename='js/requests.js') }} "></script>
+
+    <!-- Animation Js -->
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine',
+            duration: 1000
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Nathani Jawahar Sai</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
+    <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
+    <meta content="Shreethemes" name="author" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static',filename='images/favicon.ico') }}">
+    <!-- Bootstrap -->
+    <link href="{{ url_for('static',filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Magnific -->
+    <link href="{{ url_for('static',filename='css/magnific-popup.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Icon -->
+    <link href="{{ url_for('static',filename='css/materialdesignicons.min.css') }}" rel="stylesheet" type="text/css" />
+
+    <!-- SLICK SLIDER -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.theme.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.transitions.css') }}" />
+    <!-- Animation -->
+    <link href="{{ url_for('static',filename='css/aos.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Custom Css -->
+    <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="{{ url_for('static',filename='css/colors/default.css') }}" rel="stylesheet" id="color-opt">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="logo">
+                <img src="{{ url_for('static',filename='images/logo.jpg') }}" height="20" class="d-block mx-auto" alt="">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects End -->
+    <section class="section bg-light" id="projects">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title" data-aos="fade-up">
+                        <div class="titles">
+                            <h4 class="title title-line text-uppercase mb-4 pb-4">My Portfolio</h4>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="portfolio-container"></div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center" data-aos="fade-down">
+                    <h3><a href="/" style="color: white;">JAWAHAR</a></h3>
+                    <p class="para-desc mx-auto mt-5 ">{{_footer_msg}}</p>
+                    <ul class="list-unstyled mb-0 mt-4 social-icon ">
+                        <li class="list-inline-item"><a href="https://github.com/StrAnGe-7805/"><i class="mdi mdi-github-box"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/jawahar-sai-nathani-2a35391a5/"><i class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/JawaharNathani"><i class="mdi mdi-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <footer class="footer footer-bar bg-dark ">
+        <div class="container text-foot text-center ">
+            <p class="mb-0 ">{{_copyright_msg}}</p>
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <!-- Footer End -->
+    <div class="cursor"></div>
+
+    <!-- Back to top -->
+    <a href="# " class="back-to-top rounded text-center " id="back-to-top ">
+        <i class="mdi mdi-chevron-up d-block "> </i>
+    </a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootstrap.bundle.min.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/jquery.easing.min.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/scrollspy.min.js') }} "></script>
+    <!-- SLIDER -->
+    <script src="{{ url_for('static',filename='js/owl.carousel.min.js') }} "></script>
+    <!-- Magnific Popup -->
+    <script src="{{ url_for('static',filename='js/jquery.magnific-popup.min.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/isotope.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/portfolio-filter.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/magnific.init.js') }} "></script>
+    <!-- Contact -->
+    <script src="{{ url_for('static',filename='js/contact.js') }} "></script>
+    <!-- Counter -->
+    <!-- <script src="{{ url_for('static',filename='js/counter.init.js') }} "></script> -->
+    <!-- Tweenmax Js -->
+    <script src="{{ url_for('static',filename='js/jquery-twennmax.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/TweenMax.min.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/jquery-twennmax.init.js') }} "></script>
+    <!-- Feather icon -->
+    <script src="{{ url_for('static',filename='js/feather.min.js') }} "></script>
+    <!-- Typed -->
+    <script src="{{ url_for('static',filename='js/typed.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/typed.init.js') }} "></script>
+    <!-- Animation -->
+    <script src="{{ url_for('static',filename='js/aos.js') }} "></script>
+    <!-- Main Js -->
+    <script src="{{ url_for('static',filename='js/app.js') }} "></script>
+
+    <!-- Animation Js -->
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine',
+            duration: 1000
+        });
+
+        var projects = JSON.parse('{{_projects|tojson}}')
+
+        html = `
+    <div class="portfolioContainer row">`
+        for (var i = 0; i < projects.length; i++) {
+            if (projects[i]._weblink == "") {
+                html += `<div class="col-lg-4 col-md-6 mt-4 pt-2" data-aos="fade-up">
+                            <div class="portfolio-box rounded shadow position-relative overflow-hidden">
+                                <div class="portfolio-box-img position-relative overflow-hidden">
+                                    <img src="data:image/gif;base64,` + projects[i]._image + `" class="img-fluid" alt="member-image">
+                                    <div class="overlay-work">
+                                        <div class="work-content text-center">
+                                            <a href="` + projects[i]._github + `" class="text-light work-icon bg-dark d-inline-block rounded-pill"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github fea icon-sm image-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallary-title py-4 text-center">
+                                    <h5><a href="` + projects[i]._github + `" class="title text-dark">` + projects[i]._title + `</a></h5>
+                                    <span style="font-size: small; color: lightcoral;">` + projects[i]._description + `</span>
+                                </div>
+                            </div>
+                        </div>`
+            } else {
+                html += `<div class="col-lg-4 col-md-6 mt-4 pt-2" data-aos="fade-up">
+                            <div class="portfolio-box rounded shadow position-relative overflow-hidden">
+                                <div class="portfolio-box-img position-relative overflow-hidden">
+                                    <img src="data:image/gif;base64,` + projects[i]._image + `" class="img-fluid" alt="member-image">
+                                    <div class="overlay-work">
+                                        <div class="work-content text-center">
+                                            <a href="` + projects[i]._github + `" class="text-light work-icon bg-dark d-inline-block rounded-pill"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github fea icon-sm image-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                                            <a href="` + projects[i]._weblink + `" class="text-light work-icon bg-dark d-inline-block rounded-pill"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link fea icon-sm image-icon"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallary-title py-4 text-center">
+                                    <h5><a href="` + projects[i]._github + `" class="title text-dark">` + projects[i]._title + `</a></h5>
+                                    <span style="font-size: small; color: lightcoral;">` + projects[i]._description + `</span>
+                                </div>
+                            </div>
+                        </div>`
+            }
+        }
+        html += `</div>`
+        document.getElementById('portfolio-container').innerHTML = html
+    </script>
+</body>
+
+</html>
