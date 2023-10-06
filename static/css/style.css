@@ -32,13 +32,13 @@
  *    15.  Contact     *
  *    16.  Footer      *
  ======================*/
+ @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto&display=swap");
 
 body {
     margin: 0;
     height: 100vh;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto&display=swap");
 h1 {
     font-size: 42px !important;
 }
@@ -1498,6 +1498,10 @@ p {
     transition: all 0.2s ease-in-out;
 }
 
+.navbar-toggler {
+    cursor: pointer;
+}
+
 .navbar-custom .navbar-toggler {
     color: #3c4858;
     font-size: 30px;
@@ -2332,6 +2336,14 @@ p {
 .portfolio-box:hover .portfolio-box-img .overlay-work .work-content .work-icon {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
+}
+
+.project-viewmore-button {
+    display: none;
+}
+
+.portfolio-box:hover .project-viewmore-button {
+    display: block;
 }
 
 .client-review {

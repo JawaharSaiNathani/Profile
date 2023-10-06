@@ -31,12 +31,19 @@ def experience(id):
     experiences = experiences[0]
     return render_template("experience.html", experience_info=experiences, _footer_msg=footer_message, _copyright_msg=copyright_message)
 
+@app.route("/project/<id>")
+def project(id):
+    projects = list(db.all_projects.find({'_id':ObjectId(id)}))
+    projects = projects[0]
+    print(projects["_tech"])
+    return render_template("project.html", project_info=projects, _footer_msg=footer_message, _copyright_msg=copyright_message)
+
 @app.route("/certificates")
 def certificates():
     certificates = list(db.certificates.find({}))
     for certificate in certificates:
         certificate['_id'] = str(certificate['_id'])
-    return render_template("certificates.html", _certificates=certificates)
+    return render_template("certificates.html", _certificates=certificates, _footer_msg=footer_message, _copyright_msg=copyright_message)
 
 @app.route("/projects")
 def projects():

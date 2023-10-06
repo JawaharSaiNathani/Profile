@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
+    <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
+    <meta content="Shreethemes" name="author" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}">
+    <!-- Bootstrap -->
+    <link href="{{ url_for('static',filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Magnific -->
+    <link href="{{ url_for('static',filename='css/magnific-popup.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Icon -->
+    <link href="{{ url_for('static',filename='css/materialdesignicons.min.css') }}" rel="stylesheet" type="text/css" />
+
+    <!-- SLICK SLIDER -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.theme.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.transitions.css') }}" />
+    <!-- Animation -->
+    <link href="{{ url_for('static',filename='css/aos.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Custom Css -->
+    <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="{{ url_for('static',filename='css/colors/default.css') }}" rel="stylesheet" id="color-opt">
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="logo">
+                <img src="{{ url_for('static',filename='images/logo.jpg') }}" height="20" class="d-block mx-auto" alt="">
+                <!-- <h5 class="d-block mx-auto">JawaharNathani</h5> -->
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader -->
+
+    <!-- About Start -->
+    <section class="section pb-3" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 col-md-12 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                    <div class="section-title mb-0 ml-lg-5 ml-md-3" data-aos="fade-up">
+                        <h2 class="title text-primary mb-3" style="padding-bottom: 35px;">{{project_info._title}} <span style="font-size: 13px;  color: #075CA7;">{{project_info._description}}</span></h2>
+                        <p class="designation mb-3" style=" color: #075CA7; line-height: 0.8;">Mentor/Source: <span class="text-primary" style="padding-right: 5px; font-size: 20px; padding-left: 10px;">{{project_info._mentor}}</span><span style="font-size: 13px;  color: #075CA7;">{{project_info._mentor_role}}</span></p>
+                        <p class="designation mb-3" style=" color: #075CA7; line-height: 0.8;">Role: <span class="text-primary" style="padding-right: 5px; font-size: 20px; padding-left: 10px;">{{project_info._role}}</span></p>
+                        <p class="designation mb-3" style=" color: #075CA7; line-height: 0.8; padding-top: 15px;">TechStack:
+                            <span id="techstack-container" style="padding-left: 10px;"></span>
+                        </p>
+                        <p class="designation mb-3" style=" color: #075CA7; line-height: 0.8; padding-top: 15px; padding-bottom: 5px;">Description:</p>
+                        <span id="description-container"></span>
+                        <div class="mt-4" style="padding-top: 20px;" id="git_and_web_buttonContainer"></div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+    </section>
+    <!-- About end -->
+
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center" data-aos="fade-down">
+                    <h3><a href="/" style="color: white;">JAWAHAR</a></h3>
+                    <p class="para-desc mx-auto mt-5 ">{{_footer_msg}}</p>
+                    <ul class="list-unstyled mb-0 mt-4 social-icon ">
+                        <li class="list-inline-item"><a href="https://github.com/StrAnGe-7805/"><i class="mdi mdi-github-box"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/jawahar-sai-nathani-2a35391a5/"><i class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/JawaharNathani"><i class="mdi mdi-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <footer class="footer footer-bar bg-dark ">
+        <div class="container text-foot text-center ">
+            <p class="mb-0 ">{{_copyright_msg}}</p>
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <!-- Footer End -->
+    <div class="cursor"></div>
+
+    <!-- Back to top -->
+    <a href="# " class="back-to-top rounded text-center " id="back-to-top ">
+        <i class="mdi mdi-chevron-up d-block "> </i>
+    </a>
+
+    <!-- javascript -->
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootstrap.bundle.min.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/jquery.easing.min.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/scrollspy.min.js') }} "></script>
+    <!-- SLIDER -->
+    <script src="{{ url_for('static',filename='js/owl.carousel.min.js') }} "></script>
+    <!-- Magnific Popup -->
+    <script src="{{ url_for('static',filename='js/jquery.magnific-popup.min.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/isotope.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/portfolio-filter.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/magnific.init.js') }} "></script>
+    <!-- Contact -->
+    <!-- Tweenmax Js -->
+    <script src="{{ url_for('static',filename='js/jquery-twennmax.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/TweenMax.min.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/jquery-twennmax.init.js') }} "></script>
+    <!-- Feather icon -->
+    <script src="{{ url_for('static',filename='js/feather.min.js') }} "></script>
+    <!-- Typed -->
+    <script src="{{ url_for('static',filename='js/typed.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/typed.init.js') }} "></script>
+    <!-- Animation -->
+    <script src="{{ url_for('static',filename='js/aos.js') }} "></script>
+    <!-- Main Js -->
+    <script src="{{ url_for('static',filename='js/experiences-app.js') }} "></script>
+
+    <!-- Animation Js -->
+    <script>
+        AOS.init({
+            disable: true
+        });
+
+        var tech_info = JSON.parse('{{project_info._tech|tojson}}')
+        techstack = ""
+        for (var i = 0; i < tech_info.length; i++) {
+            techstack += `<span class="tag" style="--text-color:` + tech_info[i][1] + `; --background-color:` + tech_info[i][2] + `;">` + tech_info[i][0] + `</span>`
+        }
+        document.getElementById('techstack-container').innerHTML += techstack
+
+        var description_info = JSON.parse('{{project_info._detailed_description|tojson}}')
+        description = ""
+        for (var i = 0; i < description_info.length; i++) {
+            description += `<p class="text-muted">` + description_info[i] + `</p>`
+        }
+        document.getElementById('description-container').innerHTML += description
+
+        var gitlink = '{{project_info._github}}'
+        if(gitlink && gitlink != "")
+            document.getElementById('git_and_web_buttonContainer').innerHTML += `<a class="btn btn-primary mouse-down" style="cursor: pointer;" href="` + gitlink + `">View Code</a>`
+
+        var weblink = '{{project_info._weblink}}'
+        if(weblink && weblink != "")
+            document.getElementById('git_and_web_buttonContainer').innerHTML += `<a class="btn btn-primary mouse-down ml-3" style="cursor: pointer;" href="` + weblink + `">Website</a>`
+
+        var modal = document.getElementById("image-modal");
+
+        function displayModel() {
+            modal.style.display = "block";
+        }
+
+        function closeModel() {
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

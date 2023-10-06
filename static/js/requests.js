@@ -1,21 +1,24 @@
-fetch('/api/get_display_messages')
-    .then(function(response) {
-        return response.json();
-    }).then(function(messages) {
-        span_html = ""
-        for (var i = 0; i < messages.length; i++) {
-            span_html += `<p class="text-muted">` + messages[i] + `</p>`
-        }
-        document.getElementById('display-message').innerHTML = span_html
-    })
+async function getDisplayMessages() {
+    await fetch('/api/get_display_messages')
+        .then(function (response) {
+            return response.json();
+        }).then(function (messages) {
+            span_html = ""
+            for (var i = 0; i < messages.length; i++) {
+                span_html += `<p class="text-muted">` + messages[i] + `</p>`
+            }
+            document.getElementById('display-message').innerHTML = span_html
+        })
+}
 
-fetch('/api/get_experiences')
-    .then(function(response) {
-        return response.json();
-    }).then(function(experiences) {
-        html = ""
-        for (var i = 0; i < experiences.length; i++) {
-            html += `<a href="/experience/` + experiences[i]._id + `"><div class="timeline-item mt-4" style="cursor: pointer;">
+async function getExperiences() {
+    await fetch('/api/get_experiences')
+        .then(function (response) {
+            return response.json();
+        }).then(function (experiences) {
+            html = ""
+            for (var i = 0; i < experiences.length; i++) {
+                html += `<div class="timeline-item mt-4">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="duration date-label-left border rounded p-2 pl-4 pr-4 position-relative shadow text-left" style="color: black;">` + experiences[i]._duration + `</div>
@@ -23,22 +26,25 @@ fetch('/api/get_experiences')
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="event event-description-right rounded p-4 border float-left text-left">
                                     <h5 class="title mb-0 text-capitalize" style="color: black;">` + experiences[i]._company + ` | ` + experiences[i]._role + `</h5>
-                                    <small class="text-primary">Mentor: ` + experiences[i]._mentor + `</small>
+                                    <small class="text-primary">Mentor: ` + experiences[i]._mentor + `</small><br>
+                                    <a style="font-size: 12px;text-decoration: underline !important;" href="/experience/` + experiences[i]._id + `">view more</a>
                                 </div>
                             </div>
                         </div>
-                    </div></a>`
-        }
-        document.getElementById('experiences-container').innerHTML = html
-    })
+                    </div>`
+            }
+            document.getElementById('experiences-container').innerHTML = html
+        })
+}
 
-fetch('/api/get_educationDetails')
-    .then(function(response) {
-        return response.json()
-    }).then(function(educations) {
-        html = ""
-        for (var i = 0; i < educations.length; i++) {
-            html += `<div class="timeline-item mt-4">
+async function getEducationDetails() {
+    await fetch('/api/get_educationDetails')
+        .then(function (response) {
+            return response.json()
+        }).then(function (educations) {
+            html = ""
+            for (var i = 0; i < educations.length; i++) {
+                html += `<div class="timeline-item mt-4">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="duration date-label-left border rounded p-2 pl-4 pr-4 position-relative shadow text-left" style="background-color: white;">` + educations[i]._start + ` - ` + educations[i]._end + `</div>
@@ -51,19 +57,21 @@ fetch('/api/get_educationDetails')
                             </div>
                         </div>
                     </div>`
-        }
-        document.getElementById('education-container').innerHTML = html
-    })
+            }
+            document.getElementById('education-container').innerHTML = html
+        })
+}
 
-fetch('/api/get_mainProjects')
-    .then(function(response) {
-        return response.json()
-    }).then(function(projects) {
-        html = `
+async function getMainProjects() {
+    await fetch('/api/get_mainProjects')
+        .then(function (response) {
+            return response.json()
+        }).then(function (projects) {
+            html = `
     <div class="portfolioContainer row">`
-        for (var i = 0; i < projects.length; i++) {
-            if (projects[i]._weblink == "") {
-                html += `<div class="col-lg-4 col-md-6 mt-4 pt-2 ` + projects[i]._tags + `" data-aos="fade-up">
+            for (var i = 0; i < projects.length; i++) {
+                if (projects[i]._weblink == "") {
+                    html += `<div class="col-lg-4 col-md-6 mt-4 pt-2 ` + projects[i]._tags + `" data-aos="fade-up">
                             <div class="portfolio-box rounded shadow position-relative overflow-hidden">
                                 <div class="portfolio-box-img position-relative overflow-hidden">
                                     <img src="data:image/gif;base64,` + projects[i]._image + `" class="img-fluid" alt="member-image">
@@ -75,12 +83,13 @@ fetch('/api/get_mainProjects')
                                 </div>
                                 <div class="gallary-title py-4 text-center">
                                     <h5><a href="` + projects[i]._github + `" class="title text-dark">` + projects[i]._title + `</a></h5>
-                                    <span style="font-size: small; color: lightcoral;">` + projects[i]._description + `</span>
+                                    <span style="font-size: small; color: lightcoral;">` + projects[i]._description + `</span><br>
+                                    <a class="project-viewmore-button"style="font-size: 12px;text-decoration: underline !important;" href="/project/` + projects[i]._id + `">click to view more</a>
                                 </div>
                             </div>
                         </div>`
-            } else {
-                html += `<div class="col-lg-4 col-md-6 mt-4 pt-2 ` + projects[i]._tags + `" data-aos="fade-up">
+                } else {
+                    html += `<div class="col-lg-4 col-md-6 mt-4 pt-2 ` + projects[i]._tags + `" data-aos="fade-up">
                             <div class="portfolio-box rounded shadow position-relative overflow-hidden">
                                 <div class="portfolio-box-img position-relative overflow-hidden">
                                     <img src="data:image/gif;base64,` + projects[i]._image + `" class="img-fluid" alt="member-image">
@@ -94,12 +103,13 @@ fetch('/api/get_mainProjects')
                                 <div class="gallary-title py-4 text-center">
                                     <h5><a href="` + projects[i]._github + `" class="title text-dark">` + projects[i]._title + `</a></h5>
                                     <span style="font-size: small; color: lightcoral;">` + projects[i]._description + `</span>
+                                    <a class="project-viewmore-button"style="font-size: 12px;text-decoration: underline !important;" href="/project/` + projects[i]._id + `">click to view more</a>
                                 </div>
                             </div>
                         </div>`
+                }
             }
-        }
-        html += `</div>
+            html += `</div>
         <div class="row">
         <div class="col-lg-12 mt-4 pt-2">
             <div class="text-center">
@@ -107,8 +117,37 @@ fetch('/api/get_mainProjects')
             </div>
         </div>
     </div>`
-        document.getElementById('portfolio-container').innerHTML += html
-    })
+            document.getElementById('portfolio-container').innerHTML += html
+        })
+};
+
+function setPortfolioFilters() {
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+        }
+    });
+
+    $('.portfolioFilter a').click(function () {
+        $('.portfolioFilter .active').removeClass('active');
+        $(this).addClass('active');
+
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+        });
+        return false;
+    });
+};
 
 function inputChanged(id) {
     document.getElementById(id).innerHTML = ""
@@ -141,3 +180,33 @@ function sendmessage_toAdmin() {
         alert("Your Message is Recorded !!!")
     }
 }
+
+function disableLoader() {
+    $('#status').fadeOut();
+    $('#preloader').delay(350).fadeOut('slow');
+    $('body').delay(350).css({
+        'overflow': 'visible'
+    });
+}
+
+// function loadMinJs() {
+//     var script = document.createElement('script');
+//     script.src = 'static/js/app.js'; // Replace with the actual path to min.js
+//     document.head.appendChild(script);
+//   }
+
+const processRequests = async function () {
+    await getDisplayMessages()
+    await getExperiences()
+    await getEducationDetails()
+    await getMainProjects()
+    setPortfolioFilters()
+    disableLoader()
+}
+
+processRequests()
+
+setTimeout(
+    function () {
+        document.getElementById('server-slow-message').style.display = 'block';
+    }, 5000);

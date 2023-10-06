@@ -22,13 +22,13 @@
 ! function($) {
     "use strict";
     // Loader 
-    $(window).on('load', function() {
-        $('#status').fadeOut();
-        $('#preloader').delay(350).fadeOut('slow');
-        $('body').delay(350).css({
-            'overflow': 'visible'
-        });
-    }); 
+    // $(window).on('load', function() {
+    //     $('#status').fadeOut();
+    //     $('#preloader').delay(350).fadeOut('slow');
+    //     $('body').delay(350).css({
+    //         'overflow': 'visible'
+    //     });
+    // }); 
 
     // Menu
     $(window).scroll(function() {
@@ -44,13 +44,16 @@
     $('.navbar-nav a, .mouse-down').on('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 0
+            scrollTop: $($anchor.attr('href')).offset().top - 20
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
+
+        if(getComputedStyle(document.getElementById("navbarToggler")).display != "none")
+            document.getElementById("navbarToggler").click();
     });
     
     // Scrollspy
-    $(".navbar-nav").scrollspy({ offset: 70 });
+    // $(".navbar-nav").scrollspy({ offset: 70 });
     
     // Magnific Popup
     $('.mfp-image').magnificPopup({

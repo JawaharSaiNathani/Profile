@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Nathani Jawahar Sai</title>
+    <title>Experience</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
     <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
     <meta content="Shreethemes" name="author" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="{{ url_for('static',filename='images/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}">
     <!-- Bootstrap -->
     <link href="{{ url_for('static',filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- Magnific -->
@@ -61,7 +61,7 @@
                         <p class="designation mb-3" style=" color: #075CA7; line-height: 0.8; padding-top: 15px; padding-bottom: 5px;">Description:</p>
                         <span id="description-container"></span>
                         <div class="mt-4" style="padding-top: 20px;">
-                            <span class="btn btn-primary mouse-down" onclick="displayModel()">View Certificate</span>
+                            <span class="btn btn-primary mouse-down" style="cursor: pointer;" onclick="displayModel()">View Certificate</span>
                         </div>
                     </div>
                 </div>
@@ -124,9 +124,6 @@
     <script src="{{ url_for('static',filename='js/portfolio-filter.js') }} "></script>
     <script src="{{ url_for('static',filename='js/magnific.init.js') }} "></script>
     <!-- Contact -->
-    <script src="{{ url_for('static',filename='js/contact.js') }} "></script>
-    <!-- Counter -->
-    <script src="{{ url_for('static',filename='js/counter.init.js') }} "></script>
     <!-- Tweenmax Js -->
     <script src="{{ url_for('static',filename='js/jquery-twennmax.js') }} "></script>
     <script src="{{ url_for('static',filename='js/TweenMax.min.js') }} "></script>
@@ -144,8 +141,7 @@
     <!-- Animation Js -->
     <script>
         AOS.init({
-            easing: 'ease-in-out-sine',
-            duration: 1000
+            disable: true
         });
 
         var tech_info = JSON.parse('{{experience_info._tech|tojson}}')

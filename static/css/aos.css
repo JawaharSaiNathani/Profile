@@ -998,19 +998,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     transition-timing-function: cubic-bezier(.455, .03, .515, .955)
 }
 
-[data-aos^=fade][data-aos^=fade] {
-    opacity: 0;
-    transition-property: opacity, transform
-}
 
 [data-aos^=fade][data-aos^=fade].aos-animate {
     opacity: 1;
     transform: translate(0)
 }
 
-[data-aos=fade-up] {
-    transform: translateY(100px)
-}
 
 [data-aos=fade-down] {
     transform: translateY(-100px)

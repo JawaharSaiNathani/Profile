@@ -41,6 +41,9 @@
                 <div class="bounce2"></div>
                 <div class="bounce3"></div>
             </div>
+            <div class="container" id="server-slow-message" style="text-align: center; margin-top: 50px; display: none;">
+                <span class="title text-primary">Servers are Busy. Please Wait.</span>
+            </div>
         </div>
     </div>
     <!-- Loader -->
@@ -52,17 +55,20 @@
                 <h5 class="l-dark" style="color: #555555;">Jawahar Sai</h5>
                 <h5 class="l-light" style="color: white;">Jawahar Sai</h5>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="navbarToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 			        <span data-feather="menu" class="fea icon-md"></span>
 			    </button>
             <!--end button-->
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Experiences">Experiences</a>
                     </li>
@@ -107,10 +113,10 @@
                 <div class="col-lg-12 text-center">
                     <div class="title-heading" data-aos="fade-up">
                         <img src="{{ url_for('static',filename='images/hero.png') }}" class="img-fluid rounded-circle" alt="">
-                        <h1 class="heading text-primary mt-3">Nathani Jawahar Sai</h1>
+                        <h1 class="heading text-primary mt-3">Jawahar Sai Nathani</h1>
                         <h6 id="display-tags" class="sub-title text-light title-dark">I love <span class="element text-primary" data-elements="{{display_tags}}"></span></h6>
                         <div class="mt-4 pt-2">
-                            <a href="#contact" class="btn btn-primary rounded mb-2 mr-2">Hire me</a>
+                            <a href="#contact" class="btn btn-primary rounded mb-2 mr-2">Contact me</a>
                             <a href="{{ url_for('static',filename='resume.pdf') }}" class="btn btn-outline-primary rounded mb-2" download="JawaharNathani">Download CV <i data-feather="download" class="fea icon-sm"></i></a>
                         </div>
                     </div>
@@ -135,7 +141,8 @@
                 <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
                     <div class="section-title mb-0 ml-lg-5 ml-md-3" data-aos="fade-up">
                         <h4 class="title text-primary mb-3">Jawahar Sai</h4>
-                        <h6 class="designation mb-3">Btech | CSE | <span class="text-primary">IIT Tirupati</span></h6>
+                        <h6 class="designation mb-1">Bachelors in Computer Science and Engineering</h6>
+                        <h6 class="mb-3"><span class="text-primary">Indian Institute of Technology Tirupati</span></h6>
                         <span id="display-message"></span>
                         <img src="{{ url_for('static',filename='images/sign.jpg') }}" height="40" alt="">
                         <div class="mt-4">
@@ -186,7 +193,7 @@
                                 <div class="counter-icon">
                                     <i data-feather="box" class="fea icon-md text-primary"></i>
                                 </div>
-                                <h3 class="counter-value mt-3 text-white title-dark" data-count="20">1</h3>
+                                <h3 class="counter-value mt-3 text-white title-dark" data-count="21">3</h3>
                                 <h6 class="counter-head font-weight-normal mb-0 text-white title-dark">Projects Done</h6>
                             </div>
                             <!--end counter box-->
@@ -198,7 +205,7 @@
                                 <div class="counter-icon">
                                     <i data-feather="activity" class="fea icon-md text-primary"></i>
                                 </div>
-                                <h3 class="counter-value mt-3 text-white title-dark" data-count="36">3</h3>
+                                <h3 class="counter-value mt-3 text-white title-dark" data-count="26">3</h3>
                                 <h6 class="counter-head font-weight-normal mb-0 text-white title-dark">Skills</h6>
                             </div>
                             <!--end counter box-->
@@ -284,11 +291,11 @@
     <section class="cta-full border-top" id="Skills">
         <div class="container-fluid">
             <div class="row position-relative">
-                <div class="col-lg-4 padding-less img">
-                    <div style="display: flex; justify-content: center; align-content: center; padding-top: 16%;"><img style="width: 100%;" src="{{ url_for('static',filename='images/skills.gif') }}" /></div>
-                </div>
+                <!-- <div class="col-lg-4 padding-less img">
+                    <div style="display: flex; justify-content: center; align-content: center; padding-top: 50%;"><img style="width: 100%;" src="{{ url_for('static',filename='images/skills.gif') }}" /></div>
+                </div> -->
                 <!-- end col -->
-                <div class="col-lg-8 offset-lg-4">
+                <div class="col-lg-12 offset-lg-12">
                     <div class="cta-full-img-box">
                         <div class="row justify-content-center">
                             <div class="col-12 text-center">
@@ -383,8 +390,8 @@
                                         <div class="progress-box mt-4 pt-2">
                                             <h6 class="font-weight-normal">HTML | CSS | Javascript | Sql</h6>
                                             <div class="progress">
-                                                <div class="progress-bar position-relative bg-primary" style="width:75%;">
-                                                    <div class="progress-value d-block text-dark h6">75%</div>
+                                                <div class="progress-bar position-relative bg-primary" style="width:85%;">
+                                                    <div class="progress-value d-block text-dark h6">85%</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -523,7 +530,7 @@
                                                             <i data-feather="server" class="icon fea icon-md-sm"></i>
                                                         </div>
                                                         <div class="content">
-                                                            <h6 class="title mb-0">Flask</h6>
+                                                            <h6 class="title mb-0">Django & Flask</h6>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -593,7 +600,7 @@
                                                                 <i data-feather="credit-card" class="icon fea icon-md-sm"></i>
                                                             </div>
                                                             <div class="content">
-                                                                <h6 class="title mb-0">Virtual Studio</h6>
+                                                                <h6 class="title mb-0">Visual Studio</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -632,7 +639,7 @@
     </section>
     <!--end section-->
     <!-- Skill & CTA End -->
-    <div style="min-height: 500px;background-color: #3c4363;" id="Areas-of-Interest">
+    <div style="min-height: 500px;background-color: #3c4363;padding-bottom: 40px;" id="Areas-of-Interest">
         <div style="height: 1px;"></div>
         <div class="container mt-100 mt-60">
             <div class="row justify-content-center">
@@ -684,7 +691,7 @@
                                 <i data-feather="book" class="icon fea icon-md-sm"></i>
                             </div>
                             <div class="content">
-                                <h6 class="title mb-0">ML</h6>
+                                <h6 class="title mb-0">Machine Learning</h6>
                             </div>
                         </div>
                     </div>
@@ -698,7 +705,7 @@
                                 <i data-feather="smartphone" class="icon fea icon-md-sm"></i>
                             </div>
                             <div class="content">
-                                <h6 class="title mb-0">AI</h6>
+                                <h6 class="title mb-0">Artificial Intelligence</h6>
                             </div>
                         </div>
                     </div>
@@ -782,7 +789,7 @@
         <div class="container" id="portfolio-container">
             <div class="row mt-4 pt-2">
                 <div class="col-lg-12">
-                    <ul class="portfolioFilter text-center mb-0 list-unstyled" data-aos="fade-up">
+                    <ul class="portfolioFilter text-center mb-0 list-unstyled" >
                         <li class="list-inline-item mb-3"><a style="cursor: pointer;" data-filter="*" class="active text-dark mr-2 py-2 px-3 rounded">All</a></li>
                         <li class="list-inline-item mb-3"><a style="cursor: pointer;" data-filter=".machine-learning" class="text-dark mr-2 py-2 px-3 rounded">Machine Learning</a></li>
                         <li class="list-inline-item mb-3"><a style="cursor: pointer;" data-filter=".reactjs" class="text-dark mr-2 py-2 px-3 rounded">ReactJS</a></li>
@@ -792,7 +799,6 @@
                 </div>
             </div>
         </div>
-        <div class="portfolioContainer row"></div>
     </section>
 
     <!-- Contact Start -->
@@ -846,7 +852,7 @@
                         <div class="content mt-4">
                             <h5 class="title text-uppercase">Location</h5>
                             <p class="text-muted">12-142/3, Bajaji Nagar, Toopran Road, Gajwel<br>Telangana India 502278</p>
-                            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.812851917877!2d78.67685431522429!3d17.847405987804436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc7403e3f275a3%3A0x2ce6965960ce48af!2sSri%20Sai%20Fertilaizers!5e0!3m2!1sen!2sin!4v1614795600463!5m2!1sen!2sin"
+                            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.850606355923!2d78.67713277584136!3d17.845636889440964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc8712cb64f077%3A0xce46d6bf64c9fbc6!2sSri%20Sai%20Fetilizers!5e0!3m2!1sen!2sin!4v1696581012377!5m2!1sen!2sin"
                                 class="video-play-icon text-primary">View on Google map</a>
                         </div>
                     </div>
@@ -928,7 +934,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center" data-aos="fade-down">
-                    <h3><a href="#" style="color: white;">JAWAHAR</a></h3>
+                    <h3><a href="/" style="color: white;">JAWAHAR</a></h3>
                     <p class="para-desc mx-auto mt-5 ">{{_footer_msg}}</p>
                     <ul class="list-unstyled mb-0 mt-4 social-icon ">
                         <li class="list-inline-item"><a href="https://github.com/JawaharSaiNathani"><i class="mdi mdi-github-box"></i></a></li>
@@ -960,8 +966,9 @@
     <!-- Back to top -->
 
     <!-- javascript -->
+    <script src="{{ url_for('static',filename='js/requests.js') }} " async></script>
+
     <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
-    <script src="{{ url_for('static',filename='js/bootstrap.bundle.min.js') }} "></script>
     <script src="{{ url_for('static',filename='js/jquery.easing.min.js') }} "></script>
     <script src="{{ url_for('static',filename='js/scrollspy.min.js') }} "></script>
     <!-- SLIDER -->
@@ -989,13 +996,12 @@
     <!-- Main Js -->
     <script src="{{ url_for('static',filename='js/app.js') }} "></script>
 
-    <script src="{{ url_for('static',filename='js/requests.js') }} "></script>
+    <script src="{{ url_for('static',filename='js/bootstrap.bundle.min.js') }} "></script>
 
     <!-- Animation Js -->
     <script>
         AOS.init({
-            easing: 'ease-in-out-sine',
-            duration: 1000
+            disable: true
         });
     </script>
 </body>

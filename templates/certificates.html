@@ -2,22 +2,25 @@
 <html lang="en">
 
 <head>
-    <title>Nathani Jawahar Sai</title>
+    <title>Certificates</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,300,400,700,900" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='certificate-fonts/icomoon/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='certificate-css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ url_for('static',filename='certificate-css/nouislider.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='certificate-css/bootstrap-datetimepicker.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='certificate-css/style.css') }}">
+    <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="{{ url_for('static',filename='css/materialdesignicons.min.css') }}" rel="stylesheet" type="text/css" />
 </head>
 
-<body style="height: 100vh;">
+<body >
 
     <div class="site-section">
-        <div class="container">
+        <div class="container col-9">
             <div class="row mb-4">
                 <div class="col-md-7">
                     <h2 class="heading-21921" style="color: #e54b4b;">CERTIFICATES</h2>
@@ -33,6 +36,32 @@
             </div>
         </div>
     </div>
+
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center" data-aos="fade-down">
+                    <h3 style="font-weight: 600 !important;"><a href="/" style="color: white;">JAWAHAR</a></h3>
+                    <p class="para-desc mx-auto mt-5 ">{{_footer_msg}}</p>
+                    <ul class="list-unstyled mb-0 mt-4 social-icon ">
+                        <li class="list-inline-item"><a href="https://github.com/StrAnGe-7805/"><i class="mdi mdi-github-box"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/jawahar-sai-nathani-2a35391a5/"><i class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/JawaharNathani"><i class="mdi mdi-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <footer class="footer footer-bar bg-dark ">
+        <div class="container text-foot text-center ">
+            <p class="mb-0 ">{{_copyright_msg}}</p>
+        </div>
+        <!--end container-->
+    </footer>
 
     <script src="{{ url_for('static',filename='certificate-js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ url_for('static',filename='certificate-js/popper.min.js') }}"></script>
